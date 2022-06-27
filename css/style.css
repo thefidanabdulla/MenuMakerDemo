@@ -57,10 +57,11 @@ main{
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
     position: relative;
+    backdrop-filter: blur(3px) brightness(1.05);
 }
 .app__restaurants_r-item:hover{
     cursor: pointer;
-    backdrop-filter: blur(3px) brightness(1.05);
+    backdrop-filter: blur(3px) brightness(1.1);
 }
 .app__restaurants_r-item:hover .app__restaurants_r-item-btn{
     display: block!important;
