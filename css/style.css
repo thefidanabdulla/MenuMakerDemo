@@ -116,7 +116,7 @@ main{
 }
 .app__restaurantDetails{
     padding: 2rem;
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .9);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
