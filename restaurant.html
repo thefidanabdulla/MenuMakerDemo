@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu Maker</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad9a672967.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg app__nav-bg">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex align-items-center gap-3" href="./index.html">
+                <img
+                  src="./img/logo.png"
+                  alt="restaurant logo"
+                  class="app__nav-logo"
+                />
+                <p class="fw-bolder nav-logo-brandName">Restaurant Name</p>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./restaurants.html"
+                      >Restaurants</a
+                    >
+                  </li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+    <main class="app__restaurant-main">
+        <div class="container">
+            <div class="app__restaurantDetails d-flex justify-content-between gap-3">
+                <div class="app__restaurantDetails-info d-flex flex-column justify-content-between">
+                    <h1>Restaurant Name</h1>
+                    <p>+994 55 555 55 55</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolores!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolores!</p>
+                    <div class="app__restaurantDetails-links d-flex gap-4">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <button class="btn btn-secondary">
+                        View Menu
+                    </button>
+                </div>
+                <div class="app__restaurantDetails-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.673595630563!2d49.835509750926754!3d40.371761279269215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db0ec246f03%3A0xf5b031581c83f449!2sMcDonald&#39;s%20Fountains%20Square!5e0!3m2!1sen!2s!4v1656358631144!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

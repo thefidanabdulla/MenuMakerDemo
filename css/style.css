@@ -1,4 +1,9 @@
 /* navbar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a{
     text-decoration: none!important;
 }
@@ -9,14 +14,14 @@ a{
     background-color: rgba(255, 255, 255, .8)!important;
 }
 .nav-item{
-    border: 1px solid rgba(255, 255, 255, .9)!important;
+    border: 2px solid rgba(255, 255, 255, 1)!important;
 }
 .nav-logo-brandName{
     font-size: 2rem;
     margin: 0!important;
 }
 .nav-item:hover{
-    background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .8);
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -78,7 +83,7 @@ main{
 }
 .app__restaurants_r-item-img{
     height: 100%;
-    width: 236px;
+    width: 200px;
     display: flex;
     align-items: center;
 }
@@ -103,4 +108,65 @@ main{
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+}
+/* restaurant single css */
+
+.app__restaurant-main{
+    background-image: url(./../img/restauran-bg.jpg);
+}
+.app__restaurantDetails{
+    padding: 2rem;
+    background: rgba(255, 255, 255, .7);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+.app__restaurantDetails-info h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.app__restaurantDetails-info p{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .7);
+}
+.app__restaurantDetails-links{
+    font-size: 2rem;
+}
+.app__restaurantDetails-links a{
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    color: rgba(0, 0, 0, .7);
+}
+.app__restaurantDetails-links a:hover{
+    cursor: pointer;
+    color: #000;
+}
+.app__restaurantDetails-map{
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 993px) {
+    .app__restaurants_r-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .app__restaurants_r-item{
+        padding: 1rem;
+        gap: 10px;
+    }
+    .app__restaurants_r-item-img{
+        width: 150px;
+    }
 }
